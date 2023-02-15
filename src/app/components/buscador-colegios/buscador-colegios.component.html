@@ -1,0 +1,60 @@
+<div class="h-screen max-h-[500px]bg-slate-500">
+  <div class="bg-green-300">
+    <!-- el buscador-->
+    <div class="bg-black flex justify-center">
+      <div
+        class="absolute grid grid-cols-5 grid-rows-1 rounded-lg bg-gradient-to-r from-blue-500 to-blue-700 py-3 pl-10 mt-7"
+      >
+        <div class="text-center font-bold text-white md:text-xs lg:text-lg">
+          BUSCADOR DE COLEGIOS
+        </div>
+        <div class="mx-2">
+          <select class="select select-sm w-full text-slate-500">
+            <option disabled selected>Ciudad</option>
+            <option>Ciudad del Este</option>
+            <option>Franco</option>
+          </select>
+        </div>
+        <div class="mx-2">
+          <select class="select select-sm w-full text-slate-500">
+            <option disabled selected>Tipo</option>
+            <option>Público</option>
+            <option>Privado</option>
+          </select>
+        </div>
+        <div class="mx-2">
+          <select class="select select-sm w-full text-slate-500">
+            <option disabled selected>Género</option>
+            <option>Chicos</option>
+            <option>Chicas</option>
+          </select>
+        </div>
+        <div class="ml-3">
+          <button class="btn btn-sm" [routerLink]="['/escuelas']">
+            Mostrar
+          </button>
+        </div>
+      </div>
+      <div class="absolute mt-64">
+        <h1
+          class="text-5xl text-white font-mono shadow-2xl bg-black bg-opacity-25"
+        >
+          La <span class="text-yellow-400">Suiza</span> de Latinoamerica
+        </h1>
+      </div>
+      <div class="absolute mt-96 p-3">
+        <h1
+          class="text-3xl text-white font-mono bg-black bg-opacity-50 uppercase cursor-pointer"
+        >
+          Sepa como es el
+          <span class="text-yellow-400">"SISTEMA EDUCATIVO"</span>
+        </h1>
+      </div>
+
+      <img
+        class="max-h-[600px] w-full object-cover"
+        src="https://www.flacsi.net/wp-content/uploads/2012/01/Vista-frontal-bloque-secundaria-scaled.jpg"
+      />
+    </div>
+  </div>
+</div>
